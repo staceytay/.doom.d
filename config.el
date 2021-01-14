@@ -66,3 +66,6 @@
   (setq doom-modeline-env-version nil
         doom-modeline-icon nil
         doom-modeline-lsp nil))
+
+(after! shadowenv
+  (shadowenv-global-mode))
