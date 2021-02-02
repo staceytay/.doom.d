@@ -54,7 +54,7 @@
 ;; they are implemented.
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
-(cond (IS-MAC (setq mac-right-option-modifier 'alt)))
+(cond (IS-MAC (setq mac-right-option-modifier 'meta)))
 
 (setq frame-title-format '("%b")
       icon-title-format nil)
