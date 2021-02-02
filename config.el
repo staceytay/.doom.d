@@ -69,3 +69,6 @@
 
 (after! shadowenv
   (shadowenv-global-mode))
+
+(map! "C-s" #'+default/search-buffer
+      :map swiper-map "C-r" #'ivy-previous-line)
