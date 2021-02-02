@@ -8,6 +8,7 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
+(package! expand-region)
 (package! git-link)
 (package! night-owl-theme)
 (package! ns-auto-titlebar :disable t)
