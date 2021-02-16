@@ -62,6 +62,9 @@
 (after! evil
   (setq evil-escape-delay 0.2))
 
+(after! evil-collection
+  (add-to-list '+evil-collection-disabled-list 'magit))
+
 (after! doom-modeline
   (setq doom-modeline-env-version nil
         doom-modeline-icon nil
