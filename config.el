@@ -76,3 +76,6 @@
       :map swiper-map "C-r" #'ivy-previous-line)
 
 (map! :map ivy-minibuffer-map "<return>" #'ivy-alt-done)
+
+(use-package! night-owl-theme
+  :config (setq night-owl-highlight-line "#1D3B53"))
