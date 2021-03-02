@@ -70,6 +70,10 @@
         doom-modeline-icon nil
         doom-modeline-lsp nil))
 
+(after! magit
+  (remove-hook 'magit-status-headers-hook 'magit-insert-tags-header)
+  (remove-hook 'magit-status-sections-hook 'magit-insert-status-headers))
+
 (after! shadowenv
   (shadowenv-global-mode))
 
