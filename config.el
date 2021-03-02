@@ -81,4 +81,4 @@
 (map! :map ivy-minibuffer-map "<return>" #'ivy-alt-done)
 
 (use-package! night-owl-theme
-  :config (setq night-owl-highlight-line "#1D3B53"))
+  :config (setq night-owl-highlight-line "#333E4A"))
