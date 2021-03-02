@@ -52,6 +52,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(add-hook 'prog-mode-hook 'subword-mode)
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
 (cond (IS-MAC (setq mac-right-option-modifier 'meta)))
