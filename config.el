@@ -71,6 +71,9 @@
         doom-modeline-icon nil
         doom-modeline-lsp nil))
 
+(after! highlight-indent-guides
+  (setq highlight-indent-guides-responsive 'top))
+
 (after! magit
   (remove-hook 'magit-status-headers-hook 'magit-insert-tags-header)
   (remove-hook 'magit-status-sections-hook 'magit-insert-status-headers))
