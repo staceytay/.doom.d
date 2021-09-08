@@ -66,6 +66,9 @@
 (after! evil-collection
   (add-to-list '+evil-collection-disabled-list 'magit))
 
+(after! diff-hl
+  (global-diff-hl-mode))
+
 (after! doom-modeline
   (setq doom-modeline-env-version nil
         doom-modeline-icon nil
