@@ -86,6 +86,7 @@
 (after! shadowenv
   (shadowenv-global-mode))
 
+(map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
 
 (map! "C-s" #'+default/search-buffer
