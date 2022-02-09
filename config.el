@@ -63,9 +63,6 @@
 (after! evil
   (setq evil-escape-delay 0.2))
 
-(after! evil-collection
-  (add-to-list '+evil-collection-disabled-list 'magit))
-
 (after! diff-hl
   (global-diff-hl-mode))
 
