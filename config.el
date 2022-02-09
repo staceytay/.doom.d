@@ -64,7 +64,8 @@
   (setq evil-escape-delay 0.2))
 
 (after! diff-hl
-  (global-diff-hl-mode))
+  (global-diff-hl-mode)
+  :config (diff-hl-margin-mode nil))
 
 (after! doom-modeline
   (setq doom-modeline-env-version nil
