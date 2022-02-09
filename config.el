@@ -72,7 +72,9 @@
 (after! doom-modeline
   (setq doom-modeline-env-version nil
         doom-modeline-icon nil
-        doom-modeline-lsp nil))
+        doom-modeline-lsp nil)
+  (global-anzu-mode)
+  (global-set-key [remap query-replace] 'anzu-query-replace))
 
 (after! highlight-indent-guides
   (setq highlight-indent-guides-responsive 'top))
