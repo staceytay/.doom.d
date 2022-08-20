@@ -90,10 +90,7 @@
 (map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
 
-(map! "C-s" #'+default/search-buffer
-      :map swiper-map "C-r" #'ivy-previous-line)
-
-(map! :map ivy-minibuffer-map "<return>" #'ivy-alt-done)
+(map! "C-s" #'+default/search-buffer)
 
 (use-package! night-owl-theme
   :config (setq night-owl-highlight-line "#333E4A"))
