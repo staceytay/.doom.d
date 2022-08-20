@@ -13,7 +13,6 @@
 (package! night-owl-theme)
 (package! ns-auto-titlebar :disable t)
 (package! rg)
-(package! shadowenv)
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:

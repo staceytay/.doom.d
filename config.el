@@ -77,15 +77,8 @@
 (after! highlight-indent-guides
   (setq highlight-indent-guides-responsive 'top))
 
-(after! magit
-  (remove-hook 'magit-status-headers-hook 'magit-insert-tags-header)
-  (remove-hook 'magit-status-sections-hook 'magit-insert-status-headers))
-
 (after! projectile
  (setq projectile-indexing-method 'alien))
-
-(after! shadowenv
-  (shadowenv-global-mode))
 
 (map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
@@ -94,6 +87,3 @@
 
 (use-package! night-owl-theme
   :config (setq night-owl-highlight-line "#333E4A"))
-
-(use-package! tramp
-    :config (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
