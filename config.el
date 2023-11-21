@@ -80,6 +80,9 @@
 (after! projectile
  (setq projectile-indexing-method 'alien))
 
+(after! web-mode
+  (set-formatter! 'prettier-html "prettier --parser html"))
+
 (map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
 
