@@ -79,7 +79,7 @@
   (setq highlight-indent-guides-responsive 'top))
 
 (after! projectile
- (setq projectile-indexing-method 'alien))
+  (setq projectile-indexing-method 'alien))
 
 (after! web-mode
   (set-formatter! 'prettier-html "prettier --parser html"))
