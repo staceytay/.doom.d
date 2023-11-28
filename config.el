@@ -87,3 +87,11 @@
 (map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
 
+(use-package! indent-bars
+  :hook (prog-mode . indent-bars-mode)
+  :config
+  (setq
+   indent-bars-color '(highlight :face-bg t :blend 0.2)
+   indent-bars-highlight-current-depth '(:blend 0.8)
+   indent-bars-prefer-character t
+   indent-bars-starting-column 0))

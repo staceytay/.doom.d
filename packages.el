@@ -10,6 +10,8 @@
 ;(package! some-package)
 (package! expand-region)
 (package! git-link)
+(package! indent-bars
+  :recipe (:host github :repo "jdtsmith/indent-bars"))
 (package! night-owl-theme)
 (package! ns-auto-titlebar :disable t)
 (package! olivetti)
