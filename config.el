@@ -26,6 +26,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'night-owl)
+(setq night-owl-highlight-line "#333E4A")
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -86,5 +87,3 @@
 (map! :i "TAB" #'+company/complete)
 (map! :i "C-=" #'er/expand-region)
 
-(use-package! night-owl-theme
-  :config (setq night-owl-highlight-line "#333E4A"))
